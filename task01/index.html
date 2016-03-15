@@ -35,7 +35,7 @@ ul.pictures {
 
 <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
 
-<img src="keyboard.jpg"/>
+<img src="keyboard.jpg" alt="好看的键盘"/>
 
 <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>
 这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com" target="_blank">这里有一个链接点击后打开新窗口连接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
@@ -46,7 +46,7 @@ ul.pictures {
 
 <p>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了<br/>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，换行了</br>这是一个很长很长的段落，这是一个很长很长的段落，<a href="http://ife.baidu.com">这里有一个链接链接到http://ife.baidu.com</a>这是一个很长很长的段落，这是一个很长很长的段落，<strong>这里有个粗体字</strong>这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落，这是一个很长很长的段落。</p>
 
-<img src="keyboard.jpg"/>
+<img src="keyboard.jpg" alt="好看的键盘"/>
 
 <ul>
 	<li>列表项目一</li>
@@ -58,43 +58,43 @@ ul.pictures {
 <ul class="pictures">
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 	<li>
 	好看的图片<br/>
-	<img src="keyboard.jpg"/>
+	<img src="keyboard.jpg" alt="好看的键盘"/>
 	</li>
 </ul>
 
@@ -112,10 +112,24 @@ ul.pictures {
 <p>
 下面是一个表格，给表格加了一个border="1"好让你看出是一个表格<br/>
 <table>
+	<thead>
+		<tr>
+			<th>表头</th>
+			<th>表头</th>
+			<th>表头</th>
+		</tr>
+	</thead>
+	<tfoot>
+		<tr>
+			<td>总计</td>
+			<td colspan="2">1000</td>
+		</tr>
+	</tfoot>
+	<tbody>
 	<tr>
-		<th>表头</th>
-		<th>表头</th>
-		<th>表头</th>
+		<td>表格内容单元</td>
+		<td>表格内容单元</td>
+		<td><a href="#">操作</a></td>
 	</tr>
 	<tr>
 		<td>表格内容单元</td>
@@ -132,20 +146,13 @@ ul.pictures {
 		<td>表格内容单元</td>
 		<td><a href="#">操作</a></td>
 	</tr>
-	<tr>
-		<td>表格内容单元</td>
-		<td>表格内容单元</td>
-		<td><a href="#">操作</a></td>
-	</tr>
-	<tr>
-		<td>总计</td>
-		<td colspan="2">1000</td>
-	</tr>
+	</tbody>
 </table>
+</p>
 
 <h2>这里以后是一个侧栏，这是侧栏标题</h2>
 <h3>侧栏注册窗口标题</h3>
-<form action="#">
+<form onsubmit="return false">
 	<p><span>请输入邮箱地址：</span><input type="text" placeholder="这是一个文本输入框"/></p>
 	<p><span>邮箱地址请按要求格式输入</span></p>
 	<p><span>请输入密码：</span><input type="text" placeholder="这是一个文本输入框"/>
@@ -153,8 +160,10 @@ ul.pictures {
 	<p><span>密码请为6-16位英文数字</span></p>
 	<p>
 	<span>姓别：</span>
-	<input type="radio" name="gender" value="male" checked="true"/>男
-	<input type="radio" name="gender" value="male"/>女
+	<input type="radio" id="gender-male" name="gender" value="male" checked="true"/>
+	<label for="gener-male">男</label>
+	<input type="radio" id="gender-female" name="gender" value="female"/>
+	<label for="gender-female">女</label>
 
 	<span>城市：</span>
 	<select name="city">
@@ -163,9 +172,12 @@ ul.pictures {
 	</select>
 
 	<span>爱好：</span>
-	<input type="checkbox" name="hobby" value="sport"/>运动
-	<input type="checkbox" name="hobby" value="art"/>艺术
-	<input type="checkbox" name="hobby" value="science"/>科学
+	<input type="checkbox" id="hobby-sport" name="hobby" value="sport"/>
+	<label for="hobby-sport">运动</label>
+	<input type="checkbox" id="hobby-art" name="hobby" value="art"/>
+	<label for="hobby-art">科学</label>
+	<input type="checkbox" id="hobby-science" name="hobby" value="science"/>
+	<label for="hobby-science">科学</label>
 
 	<span>个人描述：</span>
 	<textarea>这是一个多行输入框，输入您的个人描述</textarea>
