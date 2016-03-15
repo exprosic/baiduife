@@ -94,14 +94,14 @@ table {
 	padding: 0;
 }
 
-th {
+thead {
 	background-color: #333;
 	color: white;
 	font-weight: bold;
 	text-align: left;
 }
 
-tr.total {
+tfoot {
 	background-color: #ccc;
 	font-weight: bold;
 }
@@ -115,18 +115,6 @@ th,td {
 	font-size: 1em;
 	padding: 10px;
 	border-left: 5px solid #ccc;
-}
-.dl {
-	display: inline-block;
-	float: left;
-}
-.dt {
-	display: inline-block;
-	float: left;
-}
-.dd {
-	display: inline-block;
-	float: left;
 }
 
 label.title {
@@ -295,10 +283,24 @@ footer {
 		<p>
 		下面是一个表格，给表格加了一个border="1"好让你看出是一个表格，你们不用写html时候不需要加<br/>
 		<table>
+			<thead>
+				<tr>
+					<th>表头</th>
+					<th>表头</th>
+					<th>表头</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr>
+					<td>总计</td>
+					<td colspan="2">1000</td>
+				</tr>
+			</tfoot>
+			<tbody>
 			<tr>
-				<th>表头</th>
-				<th>表头</th>
-				<th>表头</th>
+				<td>表格内容单元</td>
+				<td>表格内容单元</td>
+				<td><a href="#" title="一个链接">操作</a></td>
 			</tr>
 			<tr>
 				<td>表格内容单元</td>
@@ -315,16 +317,9 @@ footer {
 				<td>表格内容单元</td>
 				<td><a href="#" title="一个链接">操作</a></td>
 			</tr>
-			<tr>
-				<td>表格内容单元</td>
-				<td>表格内容单元</td>
-				<td><a href="#" title="一个链接">操作</a></td>
-			</tr>
-			<tr class="total">
-				<td>总计</td>
-				<td colspan="2">1000</td>
-			</tr>
+			</tbody>
 		</table>
+		</p>
 	</div>
 
 	<div class="passage sidebar">
@@ -344,8 +339,8 @@ footer {
 			<div>
 				<label class="title">请重复输入密码</label>
 				<div class="form-block">
-				<input type="password" value="passworld"/>
-				<p class="hint">密码请为6-16位英文数字</p>
+					<input type="password" value="passworld"/>
+					<p class="hint">密码请为6-16位英文数字</p>
 				</div>
 			</div>
 			<div>
@@ -373,7 +368,7 @@ footer {
 			</div>
 			<div>
 				<label class="title">个人描述</label>
-					<textarea>这是一个多行输入框，输入您的个人描述</textarea>
+				<textarea>这是一个多行输入框，输入您的个人描述</textarea>
 			</div>
 			<input class="form-submit" type="submit" value="确认提交"></input>
 		</form>
