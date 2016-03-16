@@ -1,0 +1,97 @@
+<!doctype html>
+<head>
+<title>BaiduIFE task06</title>
+</head>
+<style>
+body {
+	margin: 0 auto;
+	max-width: 1000px;
+}
+
+header:after {
+	content: ".";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+header {
+	border-bottom: 3px solid #999;
+	font-size: 0.5em;
+	font-family:"Microsoft Yahei";
+}
+header>div {
+	position: relative;
+	height: 60px;
+}
+header>div>span {
+	position: absolute;
+	bottom: 5px;
+}
+#logo {
+	width: 100px;
+	float:left;
+	background-color: #d47;
+}
+#logo>span {
+	left: 5px;
+	color: white;
+}
+#date {
+	float: right;
+}
+#date>span {
+	right: 0px;
+	color: #d47;
+}
+
+main {
+	margin: 30px 0;
+}
+#sec1pic {
+	position: relative;
+	height: 300px;
+	width: 640px;
+	overflow: hidden;
+}
+#sec1pic-mask0,#sec1pic-mask1 {
+	position: absolute;
+	opacity: 0.5;
+	width: 30%;
+	height: 100%;
+}
+#sec1pic-mask0 {
+	left: 0;
+	background-color: green;
+}
+#sec1pic-mask1 {
+	right: 0;
+	background-color: pink;
+}
+</style>
+<body>
+<header>
+	<div id="logo">
+		<span>ife.baidu.com</span>
+	</div>
+	<div id="date">
+		<span>2016.03</span>
+	</div>
+</header>
+
+<main>
+<div id="sec1">
+	<div id="sec1pic">
+		<div id="sec1pic-mask0"></div>
+		<div id="sec1pic-mask1"></div>
+		<img src="coffeekeyboard.jpg" alt="a screen" />
+	</div>
+	<div id="sec1info">
+		<div id="sec1title">
+			about<br/>technology
+		</div>
+	</div>
+</div>
+</main>
+</body>
+</html>
