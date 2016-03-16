@@ -1,0 +1,44 @@
+<!doctype html>
+<html>
+<head>
+<title>BaiduIFE task04</title>
+<style>
+#block {
+	width: 400px;
+	height: 200px;
+	background-color: #ccc;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+.sector {
+	width: 50px;
+	height: 50px;
+	background: #fc0;
+}
+
+#sector-topleft {
+	position: absolute;
+	top: 0;
+	left: 0;
+	border-radius: 0 0 50px 0;
+}
+
+#sector-bottomright {
+	position: absolute;
+	bottom: 0;
+	right: 0;
+	border-radius: 50px 0 0 0;
+}
+</style>
+</head>
+
+<body>
+<div id="block">
+	<div id="sector-topleft" class="sector"></div>
+	<div id="sector-bottomright" class="sector"></div>
+</div>
+</body>
+</html>
