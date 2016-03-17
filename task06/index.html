@@ -8,7 +8,7 @@ body {
 	max-width: 1000px;
 }
 
-header:after {
+header:after, #sec1:after {
 	content: ".";
 	display: block;
 	height: 0;
@@ -48,7 +48,9 @@ header>div>span {
 main {
 	margin: 30px 0;
 }
+
 #sec1pic {
+	float: left;
 	position: relative;
 	height: 300px;
 	width: 640px;
@@ -67,6 +69,44 @@ main {
 #sec1pic-mask1 {
 	right: 0;
 	background-color: pink;
+}
+
+#sec1info {
+	margin-left: 700px;
+	border-top: 3px solid purple;
+	padding-top: 10px;
+	font-family: "Arial";
+}
+#sec1title {
+	font-size: 2em;
+	text-decoration: underline;
+	text-transform: capitalize;
+	font-variant: small-caps;
+	margin: 0px;
+}
+#sec1subtitle {
+	font-size: 12px;
+	color: #777;
+	font-style: italic;
+}
+#sec1content {
+	margin: 10px 0 0 0;
+	font-size: 116px;
+	color: #75b86b;
+	font-style: italic;
+}
+#sec1footer {
+	color: #777;
+}
+#sec1footer>span {
+	display: inline-block;
+}
+#sec1footer>span>em {
+	font-style: normal;
+	color: #cc8091;
+}
+#sec1footer>span:first-child {
+	font-size: 55px;
 }
 </style>
 <body>
@@ -87,8 +127,12 @@ main {
 		<img src="coffeekeyboard.jpg" alt="a screen" />
 	</div>
 	<div id="sec1info">
-		<div id="sec1title">
-			about<br/>technology
+		<p id="sec1title">about<br/>technology</p>
+		<p id="sec1subtitle">About technology about technology about technology</p>
+		<p id="sec1content">700</p>
+		<div id="sec1footer">
+			<span><em>3.2</em></span>
+			<span><em>css</em><br/>cssssccsccscssc</span>
 		</div>
 	</div>
 </div>
